@@ -62,10 +62,16 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
 - **Language:** JavaScript
 - **UI Library:** [React](https://reactjs.org/)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI:** [Figma Design](https://www.figma.com/design/SUrQuVq2fYs30HLLvAeXlW/Luminex?node-id=14-2&t=kFfOTU2XXkv6qmJO-1)
 - **Blockchain Integration:**
-  - Sui: Direct RPC calls
-  - Avalanche: (In progress)
+  - Sui
+  - Avalanche
 
+## Contributors
+1. Samson Damian - Project Manager
+2. Oge - UI/UX Designer
+
+Contributions are welcome! If you would like to contribute to Luminex, please fork the repository and submit a pull request.
 ## Contributing
 
 Contributions are welcome! If you would like to contribute to Luminex, please fork the repository and submit a pull request.
