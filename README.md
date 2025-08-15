@@ -35,7 +35,7 @@ This project is a Next.js application. To run it locally, follow these steps:
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/czDamian/luminex.git
+    git clone https://github.com/czDamian/luminex-2.git
     ```
 2.  Navigate to the project directory:
     ```bash
@@ -71,7 +71,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to see the a
 1. Samson Damian - Project Manager
 2. Oge - UI/UX Designer
 
-Contributions are welcome! If you would like to contribute to Luminex, please fork the repository and submit a pull request.
+
 ## Contributing
 
 Contributions are welcome! If you would like to contribute to Luminex, please fork the repository and submit a pull request.
