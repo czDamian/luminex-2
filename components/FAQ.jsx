@@ -4,9 +4,9 @@ import { FiChevronDown } from "react-icons/fi"
 
 function FAQItem({ question, answer, isOpen, onToggle }) {
   return (
-    <div className="bg-gray-800/50 rounded-lg border border-gray-700 mb-4">
+    <div className="bg-[#0F1118] rounded-lg border border-gray-700 mb-4">
       <button
-        className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-700/30 transition-colors"
+        className="w-full p-6 text-left flex items-center justify-between hover:bg-[#181b25] transition-colors"
         onClick={onToggle}
       >
         <span className="text-white font-medium text-lg">{question}</span>
@@ -58,9 +58,10 @@ export default function FAQ() {
   ]
 
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="py-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
+          <h1 className="text-3xl md:text-5xl mb-2 text-white font-bold">Frequently Asked Questions</h1>
           <p className="text-gray-600 mb-4">Everything you need to know about LiteAfrika and how it works</p>
         </div>
 

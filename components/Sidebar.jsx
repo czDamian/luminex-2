@@ -9,7 +9,7 @@ export default function Sidebar() {
 
   const menuItems = [
     { icon: MdDashboard, label: "Dashboard", href: "/dashboard", active: pathname === "/dashboard" },
-    { icon: MdVerifiedUser, label: "Validators", href: "/dashboard", active: pathname === "/dashboard" },
+    { icon: MdVerifiedUser, label: "Validators", href: "/dashboard", active: pathname === "#dashboard" },
     { icon: MdSettings, label: "Settings", href: "/settings", active: pathname === "/settings" },
     { icon: MdHelp, label: "Help", href: "/help", active: pathname === "/help" },
   ]

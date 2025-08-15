@@ -5,26 +5,26 @@ export default function Testimonials() {
       role: "Avalanche Validator",
       content:
         "Luminex is a risk-first approach saved us from a major slashing event. The early warning system is incredibly accurate.",
-      avatar: "/professional-man-smiling.png",
+      avatar: "/avax-logo.png",
     },
     {
       name: "Chris John",
       role: "Avalanche Validator",
       content:
         "Luminex is a risk-first approach saved us from a major slashing event. The early warning system is incredibly accurate.",
-      avatar: "/professional-man-smiling.png",
+      avatar: "/avax-logo.png",
     },
     {
       name: "Chris John",
       role: "Avalanche Validator",
       content:
         "Luminex is a risk-first approach saved us from a major slashing event. The early warning system is incredibly accurate.",
-      avatar: "/professional-man-smiling.png",
+      avatar: "/avax-logo.png",
     },
   ]
 
   return (
-    <section className="py-20 bg-[#0F1118]">
+    <section className="py-20 bg-[#0F1118] max-w-6xl mx-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (

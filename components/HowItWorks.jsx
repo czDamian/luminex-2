@@ -4,14 +4,11 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl font-bold text-white text-center mb-16">How it works</h2>
 
-        <div className="relative">
-
-
-
-          <div className="grid md:grid-cols-2 gap-12 relative z-20 pt-20 pb-20">
-            {/* Step 1 */}
-            <div className="text-left">
-              <div className="bg-pink-500 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+        <div className="relative flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 relative z-20 max-w-4xl">
+            {/* Step 1 - Right side */}
+            <div className="md:order-2 text-left md:text-right max-w-md md:ml-auto">
+              <div className="bg-pink-500 w-12 h-12 rounded-full flex items-center justify-center mb-4 md:ml-auto">
                 <span className="text-white font-bold text-xl">01</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Connect Validators</h3>
@@ -20,9 +17,9 @@ export default function HowItWorks() {
               </p>
             </div>
 
-            {/* Step 2 */}
-            <div className="text-right md:mt-32">
-              <div className="bg-pink-500 w-12 h-12 rounded-full flex items-center justify-center mb-4 ml-auto">
+            {/* Step 2 - Left side */}
+            <div className="md:order-1 text-left max-w-md">
+              <div className="bg-pink-500 w-12 h-12 rounded-full flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-xl">02</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Real-Time Monitoring</h3>
@@ -31,9 +28,9 @@ export default function HowItWorks() {
               </p>
             </div>
 
-            {/* Step 3 */}
-            <div className="text-left md:mt-32">
-              <div className="bg-pink-500 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+            {/* Step 3 - Right side */}
+            <div className="md:order-4 text-left md:text-right max-w-md md:ml-auto">
+              <div className="bg-pink-500 w-12 h-12 rounded-full flex items-center justify-center mb-4 md:ml-auto">
                 <span className="text-white font-bold text-xl">03</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Risk Assessment</h3>
@@ -42,14 +39,14 @@ export default function HowItWorks() {
               </p>
             </div>
 
-            {/* Step 4 */}
-            <div className="text-right">
-              <div className="bg-pink-500 w-12 h-12 rounded-full flex items-center justify-center mb-4 ml-auto">
+            {/* Step 4 - Left side */}
+            <div className="md:order-3 text-left max-w-md">
+              <div className="bg-pink-500 w-12 h-12 rounded-full flex items-center justify-center mb-4">
                 <span className="text-white font-bold text-xl">04</span>
               </div>
               <h3 className="text-2xl font-bold text-white mb-4">Actionable Alerts</h3>
               <p className="text-gray-300">
-                Receive intelligent notifications with specific recommendations to optimize performance.
+                Receive intelligent notifications with specific recommendations to optimize preferences.
               </p>
             </div>
           </div>
