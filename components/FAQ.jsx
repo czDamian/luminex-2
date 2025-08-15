@@ -1,5 +1,7 @@
-"use client"
+'use client'
+
 import { useState } from "react"
+import { motion, AnimatePresence } from "framer-motion"
 import { FiChevronDown } from "react-icons/fi"
 
 function FAQItem({ question, answer, isOpen, onToggle }) {
@@ -10,13 +12,23 @@ function FAQItem({ question, answer, isOpen, onToggle }) {
         onClick={onToggle}
       >
         <span className="text-white font-medium text-lg">{question}</span>
-        <FiChevronDown className={`text-gray-400 transition-transform ${isOpen ? "rotate-180" : ""}`} />
+        <motion.div animate={{ rotate: isOpen ? 180 : 0 }}>
+          <FiChevronDown className={`text-gray-400 transition-transform`} />
+        </motion.div>
       </button>
-      {isOpen && (
-        <div className="px-6 pb-6">
-          <p className="text-gray-300">{answer}</p>
-        </div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="px-6 pb-6"
+          >
+            <p className="text-gray-300">{answer}</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }
