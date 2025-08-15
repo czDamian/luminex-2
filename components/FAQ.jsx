@@ -72,12 +72,12 @@ export default function FAQ() {
   return (
     <section className="py-20 relative overflow-hidden">
       <motion.div
-        className="absolute top-1/3 left-0 w-72 h-96 rounded-full mix-blend-lighten filter blur-2xl opacity-20 z-2"
+        className="absolute top-1/3 left-0 w-72 h-96 rounded-full mix-blend-lighten filter blur-2xl opacity-20 z-2 hidden md:block"
         style={{ backgroundColor: '#FC01D8', transform: 'translate(-50%, -50%)' }}
         animate={{ scale: [1, 1.1, 1], transition: { duration: 7, repeat: Infinity } }}
       ></motion.div>
       <motion.div
-        className="absolute top-1/3 left-0 w-52 h-96 rounded-full mix-blend-lighten filter blur-xl opacity-20 z-2"
+        className="absolute top-1/3 left-0 w-52 h-96 rounded-full mix-blend-lighten filter blur-xl opacity-20 z-2 hidden md:block"
         style={{ backgroundColor: '#7928CA', transform: 'translate(-30%, -70%)' }}
         animate={{ scale: [1, 1.1, 1], transition: { duration: 5, repeat: Infinity, delay: 2 } }}
       ></motion.div>
