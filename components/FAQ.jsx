@@ -38,6 +38,16 @@ export default function FAQ() {
 
   const faqs = [
     {
+      question: "What is Luminex?",
+      answer:
+        "Luminex is a comprehensive validator monitoring platform that provides real-time, risk-based insights for blockchain validators. We help you protect your stake with intelligent monitoring and early warning systems.",
+    },
+    {
+      question: "How does it work?",
+      answer:
+        "Simply connect your validator addresses across supported networks with one-click setup. Our algorithms continuously monitor performance and provide actionable alerts with specific recommendations.",
+    },
+    {
       question: "Which blockchain network do you support?",
       answer:
         "We currently support Avalanche and Sui networks from day one, with plans to expand to Ethereum, Solana, and other major networks based on community demand.",
@@ -57,24 +67,25 @@ export default function FAQ() {
       answer:
         "Yes, we use enterprise-grade security measures including encryption at rest and in transit, secure API endpoints, and never store your private keys or sensitive validator credentials.",
     },
-    {
-      question: "How does it work?",
-      answer:
-        "Simply connect your validator addresses across supported networks with one-click setup. Our algorithms continuously monitor performance and provide actionable alerts with specific recommendations.",
-    },
-    {
-      question: "What is Luminex?",
-      answer:
-        "Luminex is a comprehensive validator monitoring platform that provides real-time, risk-based insights for blockchain validators. We help you protect your stake with intelligent monitoring and early warning systems.",
-    },
   ]
 
   return (
-    <section className="py-20">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 relative overflow-hidden">
+      <motion.div
+        className="absolute top-1/3 left-0 w-72 h-96 rounded-full mix-blend-lighten filter blur-2xl opacity-20 z-2"
+        style={{ backgroundColor: '#FC01D8', transform: 'translate(-50%, -50%)' }}
+        animate={{ scale: [1, 1.1, 1], transition: { duration: 7, repeat: Infinity } }}
+      ></motion.div>
+      <motion.div
+        className="absolute top-1/3 left-0 w-52 h-96 rounded-full mix-blend-lighten filter blur-xl opacity-20 z-2"
+        style={{ backgroundColor: '#7928CA', transform: 'translate(-30%, -70%)' }}
+        animate={{ scale: [1, 1.1, 1], transition: { duration: 5, repeat: Infinity, delay: 2 } }}
+      ></motion.div>
+
+      <div className="max-w-4xl z-1 mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-5xl mb-2 text-white font-bold">Frequently Asked Questions</h1>
-          <p className="text-gray-600 mb-4">Everything you need to know about LiteAfrika and how it works</p>
+          <p className="text-gray-600 mb-4">Everything you need to know about Luminex and how it works</p>
         </div>
 
         <div className="bg-[#0F1118] rounded-2xl p-8">
@@ -92,3 +103,4 @@ export default function FAQ() {
     </section>
   )
 }
+

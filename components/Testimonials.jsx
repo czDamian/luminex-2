@@ -9,21 +9,21 @@ export default function Testimonials() {
       role: "Avalanche Validator",
       content:
         "Luminex is a risk-first approach saved us from a major slashing event. The early warning system is incredibly accurate.",
-      avatar: "/avax-logo.png",
+      avatar: "/testimonial.png",
     },
     {
       name: "Chris John",
       role: "Avalanche Validator",
       content:
         "Luminex is a risk-first approach saved us from a major slashing event. The early warning system is incredibly accurate.",
-      avatar: "/avax-logo.png",
+      avatar: "/testimonial.png",
     },
     {
       name: "Chris John",
       role: "Avalanche Validator",
       content:
         "Luminex is a risk-first approach saved us from a major slashing event. The early warning system is incredibly accurate.",
-      avatar: "/avax-logo.png",
+      avatar: "/testimonial.png",
     },
   ]
 
@@ -67,7 +67,7 @@ export default function Testimonials() {
             >
               <div className="flex items-center gap-4 mb-4">
                 <img
-                  src={testimonial.avatar || "/placeholder.svg"}
+                  src={testimonial.avatar}
                   alt={testimonial.name}
                   className="w-12 h-12 rounded-full"
                 />

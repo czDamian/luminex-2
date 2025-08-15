@@ -1,6 +1,7 @@
-"use client"
+'use client'
 
 import Link from "next/link"
+import Image from "next/image"
 import { motion } from "framer-motion"
 
 export default function Hero() {
@@ -26,17 +27,22 @@ export default function Hero() {
   }
 
   return (
-    <section className="relative bg-[#0F1118] py-20 overflow-hidden">
-      {/* Grid background pattern */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-purple-900/20 to-transparent"></div>
-        <div
-          className="w-full h-full opacity-30"
-          style={{
-            backgroundImage: `linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)`,
-            backgroundSize: "50px 50px",
-          }}
-        ></div>
+    <section className="relative bg-[#0F1118] py-20 min-h-screen overflow-hidden">
+      {/* Glowing ovals */}
+      <motion.div
+        className="absolute top-1/4 left-0 w-48 h-48 rounded-full mix-blend-lighten filter blur-2xl opacity-10"
+        style={{ backgroundColor: '#FC01D8' }}
+        animate={{ scale: [1, 1.1, 1], transition: { duration: 5, repeat: Infinity } }}
+      ></motion.div>
+      <motion.div
+        className="absolute top-1/4 right-0 w-48 h-48 rounded-full mix-blend-lighten filter blur-2xl opacity-10"
+        style={{ backgroundColor: '#7928CA' }}
+        animate={{ scale: [1, 1.1, 1], transition: { duration: 5, repeat: Infinity, delay: 2.5 } }}
+      ></motion.div>
+
+      {/* Grid Image */}
+      <div className="absolute inset-0 opacity-20 hidden md:block">
+        <Image src="/grid.png" layout="fill" objectFit="cover" alt="Grid Background" />
       </div>
 
       <motion.div
@@ -82,3 +88,4 @@ export default function Hero() {
     </section>
   )
 }
+

@@ -4,6 +4,7 @@ import Features from "@/components/Features"
 import HowItWorks from "@/components/HowItWorks"
 import Testimonials from "@/components/Testimonials"
 import FAQ from "@/components/FAQ"
+import DashboardOverview from "@/components/DashboardOverview"
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <LandingHeader />
       <Hero />
       <Features />
+      <DashboardOverview />
       <HowItWorks />
       <Testimonials />
       <FAQ />

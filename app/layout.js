@@ -1,5 +1,6 @@
 import { Raleway, Exo_2, Orbitron } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/Footer";
 // import { Provider } from "@/Provider";
 
 const raleway = Raleway({
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
       >
         {/* <Provider> */}
           {children}
+          <Footer />
         {/* </Provider> */}
       </body>
     </html>
